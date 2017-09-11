@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical" >
+    <ImageView 
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="23dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/wallet_balance_baizhuanfen_help_icon1"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/wallet_baizhuanfen_help_ti1"
+        android:textColor="#2c2c2c"
+        android:textSize="18sp"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="5dp"
+        android:gravity="center|left"
+        android:text="@string/wallet_baizhuanfen_help_ti1_content"
+        android:textColor="#555555"
+        android:textSize="12sp"/>
+
+</LinearLayout>

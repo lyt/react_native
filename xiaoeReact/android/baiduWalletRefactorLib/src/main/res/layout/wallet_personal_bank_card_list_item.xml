@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wallet_personal_blue_color_bg_selector"
+    android:clickable="true" >
+
+    <ImageView
+        android:id="@+id/bank_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:src="@drawable/wallet_personal_mybankcar_bg" />
+    
+    <ImageView 
+        android:id="@+id/bd_wallet_tobe_certitied_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:src="@drawable/wallet_personal_to_be_certified"
+        />
+
+    <LinearLayout
+        android:id="@+id/wallet_personal_icon_layout"
+        android:layout_width="@dimen/bd_wallet_service_item_s_icon_height"
+        android:layout_height="@dimen/bd_wallet_service_item_s_icon_width"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:background="@drawable/wallet_personal_mybank_bg"
+        android:gravity="center" >
+
+        <com.baidu.wallet.base.widget.NetImageView
+            android:id="@+id/wallet_personal_my_bank_card_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/wallet_personal_service_img" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/wallet_personal_icon_layout" >
+
+        <TextView
+            android:id="@+id/wallet_personal_my_bank_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="@color/bd_wallet_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/wallet_personal_my_bank_card_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/wallet_personal_my_bank_card_name"
+            android:layout_below="@id/wallet_personal_my_bank_card_name"
+            android:textColor="@color/bd_wallet_white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wallet_personal_my_bank_card_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:textColor="@color/bd_wallet_white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

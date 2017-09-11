@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="bd_wallet_tip_with">80dp</dimen>
+    <dimen name="bd_wallet_service_item_s_icon_height">50dip</dimen>
+    <dimen name="bd_wallet_service_item_s_icon_width">50dip</dimen>
+    <dimen name="bd_wallet_mybankcard_item_margin">12dp</dimen>
+</resources>

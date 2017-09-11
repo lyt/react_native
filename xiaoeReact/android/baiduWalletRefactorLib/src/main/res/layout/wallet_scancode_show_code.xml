@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <com.baidu.wallet.base.widget.BdActionBar
+        android:id="@+id/bdactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bdactionbar"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/qr_code_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/bd_wallet_bank_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="51dp"
+                android:background="@drawable/wallet_base_history_item_bg" >
+
+                <TextView
+                    android:id="@+id/bd_bank_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22.6dp"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/bd_wallet_bank_card_triggle"
+                    android:textColor="#333333"
+                    android:textColorHint="@color/bd_wallet_text_gray"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/bd_wallet_bank_card_triggle"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="@null"
+                    android:scaleType="center"
+                    android:src="@drawable/scancode_wallet_base_arrow" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/show_bank_info_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bd_wallet_bank_info_layout"
+                android:background="@drawable/wallet_base_listview_divider_line"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/show_code_help_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_bank_info_line"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/show_code_help_tips"
+                android:textColor="@color/bd_wallet_text_gray_color"
+                android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+            <RelativeLayout
+                android:id="@+id/code_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_code_help_tips"
+                android:layout_margin="10dp"
+                android:background="@drawable/wallet_base_corners_bg"
+                android:paddingBottom="15dp" >
+
+                <ImageView
+                    android:id="@+id/scan_code_image"
+                    android:layout_width="@dimen/bd_wallet_scancode_qr_width"
+                    android:layout_height="@dimen/bd_wallet_scancode_qr_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/scan_code_image"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/wallet_scancode_img_line" />
+
+                <ImageView
+                    android:id="@+id/qr_code_image"
+                    android:layout_width="@dimen/bd_wallet_scancode_br_width"
+                    android:layout_height="@dimen/bd_wallet_scancode_br_width"
+                    android:layout_below="@id/line"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:id="@+id/baidu_wallet_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qr_code_image"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/wallet_scancode_logo" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/baidu_wallet_logo"
+                    android:layout_alignTop="@id/baidu_wallet_logo"
+                    android:layout_below="@id/qr_code_image"
+                    android:layout_toRightOf="@id/baidu_wallet_logo" >
+
+                    <com.baidu.scancode.ui.widget.ShapeProgressBar
+                        android:id="@+id/refresh_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/bd_wallet_scancode_refresh" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+           
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/listview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bdactionbar"
+        android:layout_marginTop="52dp"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/bd_wallet_bank_info_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wallet_base_history__bg_border"
+            android:contentDescription="@null"
+            android:divider="@drawable/wallet_base_listview_divider_line" />
+
+        <ImageView
+            android:id="@+id/listview_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bd_wallet_bank_info_listview"
+            android:background="@drawable/wallet_base_listview_divider_line"
+            android:contentDescription="@null" />
+
+        <View
+            android:id="@+id/mask_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/listview_bottom_line"
+            android:background="#7F000000" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/show_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFFFF"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

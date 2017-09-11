@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.edaixi.avatar.clipimage.CommonTitle
+        android:id="@+id/commonTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:left_visible="true"
+        app:right_visible="false"
+        app:title_text="手动输入" />
+
+
+    <EditText
+        android:id="@+id/input_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/commonTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/stroke_solid_corners_deepgray_white_5"
+        android:hint="请输入条码(二维码)"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#3e3e3e"
+        android:textColorHint="#3e3e3e"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F8FCFE">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="#919191"
+            android:orientation="vertical" />
+
+
+        <Button
+            android:id="@+id/ensure_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="#518DF4"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

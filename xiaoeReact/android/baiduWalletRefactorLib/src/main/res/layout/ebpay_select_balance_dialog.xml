@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/ebpay_dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wallet_base_dialog_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bd_wallet_dialog_title_height" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bd_wallet_dialog_title_height"
+            android:gravity="center"
+            android:text="百度钱包抵扣"
+            android:textColor="@color/bd_wallet_dialog_titletext"
+            android:textSize="@dimen/ebpay_text_size_18" />
+
+        <ImageButton
+                android:id="@+id/dialog_title_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/wallet_base_pwdpay_close_selector" />
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.8dp"
+        android:background="@color/bd_wallet_dialog_lineblue" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/score_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bd_wallet_pwdpay_item_height"
+            android:background="@drawable/ebpay_textview_bg_selector"
+            android:paddingLeft="@dimen/ebpay_line_margin_15"
+            android:paddingRight="@dimen/ebpay_line_margin_15" 
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/score_logo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ebpay_score_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="35dp"
+                android:layout_toRightOf="@id/score_logo"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/score_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bd_wallet_dialog_contenttext"
+                    android:textSize="@dimen/ebpay_text_size_15" />
+
+                <TextView
+                    android:id="@+id/score_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/bd_wallet_text_gray_color"
+                    android:textSize="@dimen/ebpay_text_size_12" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/score_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ebpay_pwd_checkbox_selector"
+                android:scaleType="center" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bd_wallet_pwdpay_light_gray" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/balance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bd_wallet_pwdpay_item_height"
+            android:background="@drawable/ebpay_textview_bg_selector"
+            android:paddingLeft="@dimen/ebpay_line_margin_15"
+            android:paddingRight="@dimen/ebpay_line_margin_15" >
+
+            <ImageView
+                android:id="@+id/balance_logo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ebpay_balance_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="35dp"
+                android:layout_toRightOf="@id/balance_logo"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/balance_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bd_wallet_dialog_contenttext"
+                    android:textSize="@dimen/ebpay_text_size_15" />
+
+                <TextView
+                    android:id="@+id/balance_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/bd_wallet_text_gray_color"
+                    android:textSize="@dimen/ebpay_text_size_12" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/balance_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ebpay_pwd_checkbox_selector"
+                android:scaleType="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+          android:id="@+id/btn_next"
+          android:layout_width="fill_parent"
+          android:layout_height="@dimen/ebpay_bt_height"
+      	  android:layout_marginLeft="10dp"
+      	  android:layout_marginRight="10dp"
+      	  android:layout_marginBottom="15dip"
+          android:background="@drawable/wallet_base_pwdpay_submit_selector"
+          android:clickable="false"
+          android:drawablePadding="5dp"
+          android:text="@string/ebpay_choose_score_balnace_dialog_btn"
+          android:textColor="@color/ebpay_white"
+          android:textSize="@dimen/ebpay_text_size_18" />
+
+</LinearLayout>

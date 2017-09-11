@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bd_wallet_home_bg"
+    android:orientation="vertical" >
+
+    <com.baidu.wallet.base.widget.BdActionBar
+        android:id="@+id/bdactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/wallet_home_paycode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <ScrollView
+        android:id="@+id/wallet_home_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarSize="5dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/wallet_base_shape_scrollbar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/wallet_home_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/wallet_home_topgap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bd_wallet_home_group_gap_width"
+                android:minHeight="@dimen/bd_wallet_home_group_gap_width" />
+
+            <TextView
+                android:id="@+id/wallet_home_shading"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/wallet_home_shading_logo"
+                android:gravity="center_horizontal|top"
+                android:minHeight="0dp"
+                android:paddingTop="0dp"
+                android:text="@string/wallet_home_shading_tip_default"
+                android:textColor="@color/bd_wallet_home_text_gray"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/wallet_home_asset_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bd_wallet_home_inner_separator"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <include layout="@layout/wallet_home_outer_horizontal_seperator" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:background="@drawable/wallet_home_item_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <include
+                        android:id="@+id/wallet_home_asset_balance"
+                        layout="@layout/wallet_home_asset_item" />
+
+                    <View
+                        android:layout_width="@dimen/bd_wallet_home_separator_line_width"
+                        android:layout_height="44dp"
+                        android:background="@color/bd_wallet_home_inner_separator" />
+
+                    <include
+                        android:id="@+id/wallet_home_asset_bankcard"
+                        layout="@layout/wallet_home_asset_item" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bd_wallet_home_separator_line_width"
+                    android:background="@color/bd_wallet_home_inner_separator" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:background="@drawable/wallet_home_item_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <include
+                        android:id="@+id/wallet_home_asset_cashback"
+                        layout="@layout/wallet_home_asset_item" />
+
+                    <View
+                        android:layout_width="@dimen/bd_wallet_home_separator_line_width"
+                        android:layout_height="26dp"
+                        android:background="@color/bd_wallet_home_inner_separator" />
+
+                    <include
+                        android:id="@+id/wallet_home_asset_discount"
+                        layout="@layout/wallet_home_asset_item" />
+
+                    <View
+                        android:layout_width="@dimen/bd_wallet_home_separator_line_width"
+                        android:layout_height="26dp"
+                        android:background="@color/bd_wallet_home_inner_separator" />
+
+                    <include
+                        android:id="@+id/wallet_home_asset_history"
+                        layout="@layout/wallet_home_asset_item" />
+                </LinearLayout>
+
+                <include layout="@layout/wallet_home_outer_horizontal_seperator" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wallet_home_service_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/wallet_home_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/bd_wallet_home_group_gap_width"
+                android:text="@string/wallet_home_feedback"
+                android:textColor="@color/ebpay_text_link_nomal"
+                android:textSize="@dimen/bd_wallet_text_size_normal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

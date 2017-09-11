@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wallet_transfer_homepage_title">转账</string>
+    <string name="wallet_transfer_name_invalid">开户姓名有误，请重新输入</string>
+    <string name="wallet_transfer_userquota_info">单笔限额%1$s元，您当日还可转%2$s元</string>
+    <string name="wallet_transfer_account_hint">本次可转账%1$s元</string>
+	<string name="wallet_transfer_fail">转账失败</string>
+	<string name="wallet_transfering">转账进行中&#8230;请稍后查看交易记录</string>
+    <string name="wallet_transfer_hot_bank">热门银行</string>
+    <string name="wallet_select_correct_phonenumber">请选择正确的手机号码</string>
+    <string name="wallet_transferauth_info_dialog_title">转账金额说明</string>
+    <string name="wallet_transfer_select_bank">选择开户银行</string>
+    <string name="wallet_transfer_goto_pay">去付款</string>
+    
+    <string name="wallet_transfer_title1">收款银行卡</string>
+    <string name="wallet_transfer_cardnotips1">银行卡号</string>
+    <string name="wallet_transfer_bankcard">开户银行</string>
+    <string name="wallet_transfer_name">开户姓名</string>
+    <string name="wallet_transfer_amount">转账金额</string>
+    <string name="wallet_transfer_cardholder">持卡人</string>
+    <string name="wallet_transfer_cost_time_tip">到账时间</string>
+    <string name="wallet_transfer_amount_tip">每笔最高500(0手续费)</string>
+    <string name="wallet_transfer_notify_user">通知收款人</string>
+    <string name="wallet_transfer_decrption_tip">转账说明</string>
+    <string name="wallet_transfer_notify_hint">收款人手机号(选填)</string>
+    <string name="wallet_transfer_description_hint">15字以内(选填)</string>
+    <string name="wallet_transfer_confirm_title">确认转账信息</string>
+    <string name="wallet_transfer_above_oncequota_tips">您的转账金额已超过单笔限额，请调整转账金额</string>
+    <string name="wallet_transfer_above_dayquota_tips">您的转账金额已超过当日限额，请明天再试</string>
+    <string name="wallet_transfer_illega_account">请输入有效转账金额</string>
+    <string name="wallet_transfer_payee_account_hint">收款人银行卡号/手机号/邮箱</string>
+    <string name="wallet_transfer_payee_account_tip">收款人账号</string>
+    <string name="wallet_transfer_payee_name_tip">收款人姓名</string>
+    <string name="wallet_transfer_account_title">转账到账户</string>
+    <string name="wallet_transfer_account_tip1">收款账户</string>
+    <string name="wallet_transfer_account_baifubao">对方已有百度钱包账号，资金将直接进入对方钱包账户</string>
+    <string name="wallet_transfer_account_not_baifubao">对方尚未注册百度钱包账号，将通过短信引导对方完成收款</string>
+    
+    <string name="wallet_transfer_error_account">收款人账号格式不正确，请重新输入</string>
+    <string name="wallet_transfer_transfer_bankcard_title">转账到银行卡</string>
+    <string name="wallet_transfer_account">转账账户</string>
+    <string name="wallet_transfer_sure_receive">确认收款</string>
+    
+    <string name="wallet_transfer_unrealname_has_passid">请仔细核对收款人信息哦，转账后将短信通知对方</string>
+    <string name="wallet_transfer_no_passid_is_phone">请仔细核对收款人信息哦，转账后将通过短信引导他完成收款</string>
+    <string name="wallet_transfer_no_passid_is_email">该账号尚未注册，为保证消息及时到达，仅支持手机号</string>
+    <string name="wallet_transfer_walletuser_tips">提示：转账仅支持储蓄卡，成功后资金将直接进入对方钱包账户，无法退回，百度钱包不介入双方纠纷处理</string>
+	<string name="wallet_transfer_none_baifubao_user_tips">提示：请仔细核对收款人信息，转账后将通过短信引导对方登录并完成收款。若15日内未完成收款，将自动退还至您的账户</string>
+    <string name="wallet_transfer_recv_sms_tips">为了保障您的账户安全，验证码已发送至手机 %1$s</string>
+
+    <string name="wallet_transfer_to_contact">到通讯录好友</string>
+    <string name="wallet_transfer_collect_tip">转账指南</string>
+    <string name="wallet_transfer_error_phonenumber">手机号码输入错误，请重新填写</string>
+    
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:gravity="center"
+    android:scrollbars="none">
+
+    <ImageView
+        android:id="@+id/exception_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_info" />
+
+    <TextView
+        android:id="@+id/exception_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exception_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/ebpay_no_network"
+        android:textColor="#c6c6c6"
+        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+    <Button
+        android:id="@+id/exception_try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exception_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:text="重试"
+        android:textColor="#f02216"
+        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+</RelativeLayout>

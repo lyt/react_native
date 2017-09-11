@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.baidu.wallet.base.widget.BdActionBar
+        android:id="@+id/bdactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/bd_wallet_trans_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bdactionbar"
+        layout="@layout/wallet_base_records_content"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/wallet_pay_pp_top_banner_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/bdactionbar"
+        android:background="@drawable/wallet_base_pp_top_banner_bg"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/ebpay_transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/wallet_base_security_pp_top_banner"
+            android:gravity="center"
+            android:textColor="@color/bd_wallet_white"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/wallet_pay_pp_top_banner_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ebpay_transparent"
+            android:clickable="true"
+            android:maxHeight="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/wallet_base_pp_top_banner_x" />
+    </LinearLayout>
+
+</RelativeLayout>

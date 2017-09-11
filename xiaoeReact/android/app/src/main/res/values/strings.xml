@@ -1,0 +1,5 @@
+<resources>
+    <string name="reactNativeCodePush_androidDeploymentKey" moduleConfig="true">I949qp4TN_thZjoeMiJmnPvGeDmONyR4SJqlm</string>
+    <string name="app_name">小e助手</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

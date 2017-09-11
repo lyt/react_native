@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.baidu.wallet.base.widget.BdActionBar
+        android:id="@+id/bdactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/bd_wallet_auth_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bd_wallet_white"
+        android:orientation="horizontal"
+        android:paddingBottom="20.0dp"
+        android:paddingLeft="10.0dp"
+        android:paddingTop="20.0dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/bd_wallet_auth_img"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/wallet_base_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/bd_wallet_auth_rightnow"
+            android:textColor="@color/bd_wallet_fp_text_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:layout_toLeftOf="@id/bd_wallet_auth_img"
+            android:text="@string/bd_wallet_auth_tip"
+            android:textColor="@color/bd_wallet_black3"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wallet_personal_bank_detail_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

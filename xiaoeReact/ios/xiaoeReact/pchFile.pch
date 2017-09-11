@@ -1,0 +1,50 @@
+//
+//  pchFile.pch
+//  xiaoeReact
+//
+//  Created by zrz on 2017/3/27.
+//  Copyright © 2017年 Facebook. All rights reserved.
+//
+#ifdef __OBJC__
+
+#import "UIImage+Category.h"
+#import "UIColor+Category.h"
+#import "NSString+Category.h"
+#import "NSObject+Category.h"
+#import "UIViewController+BackButtonHandler.h"
+#endif
+
+#ifndef pchFile_pch
+#define pchFile_pch
+
+
+//常用宏
+#ifdef DEBUG
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#else
+#define DebugLog(s, ...)
+#endif
+
+
+#define IsEmptyString(S)   ((S==nil||S==NULL)?YES:([S isKindOfClass:[NSNull class]]?YES:([[S stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0?YES:NO)))
+#define kWS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+
+
+#define UI_IS_IPHONE            ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+#define IS_IPHONE4           (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height < 568.0)
+#define IS_IPHONE5           (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0)
+#define IS_IPHONE6           (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0)
+#define IS_IPHONE6PLUS       (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0 || [[UIScreen mainScreen] bounds].size.width == 736.0)
+
+
+#define kColorWithHex(hex)                         [UIColor colorWithHexString:hex]
+#define kColorWithRGB(R, G, B, A)                  [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+
+
+
+
+#define kBMKAppKey              @"FkHl5s5QW40MX88C4lmNy9UT"
+
+
+#endif

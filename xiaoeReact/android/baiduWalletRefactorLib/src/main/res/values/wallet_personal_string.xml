@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wallet_personal_bank_list_login_tip">登录百度钱包\n即可享受安全便捷的移动支付体验</string>
+    <string name="wallet_personal_no_bank_card_tip">添加银行卡\n即可享受安全便捷的移动支付体验</string>
+    <string name="bd_wallet_trans_detail">交易详情</string>
+    <string name="bd_wallet_trans_sucess">交易成功</string>
+    <string name="bd_wallet_trans_price">交易金额：</string>
+    <string name="bd_wallet_save_yuan">节省%1$s元</string>
+    <string name="bd_wallet_fee">%1$s服务费</string>
+    <string name="bd_wallet_kefu">客服电话： %1$s</string>
+    <string name="bd_wallet_to_sp">查看订单</string>
+    <string name="bd_wallet_close_trans">关闭交易</string>
+    <string name="bd_wallet_confirm_pay">确认付款</string>
+    <string name="bd_wallet_received">到账成功</string>
+    <string name="bd_wallet_pay_handling">银行处理中</string>
+    <string name="bd_wallet_pay_success">付款成功</string>
+    <string name="bd_wallet_rece_time">到账时间</string>
+    <string name="bd_wallet_payway">支付方式</string>
+    <string name="bd_wallet_tab_bill">我的交易</string>
+    <string name="bd_wallet_confirm_colose_trans">确认关闭交易？</string>
+    <string name="bd_wallet_trans_cancel">交易关闭</string>
+    <string name="bd_wallet_transfer_to">转账给%1$s</string>
+    <string name="bd_wallet_close_trans_fail">关闭交易失败，请稍后重试</string>
+    <string name="bd_wallet_close_trans_success">关闭交易成功</string>
+    <string name="bd_wallet_no_data">暂无记录</string>
+    <string name="bd_wallet_transfer_price">转账金额：</string>
+    <string name="bd_wallet_add_new_card">+ 添加银行卡</string>
+    <string name="ebpay_valid_mobile">验证手机号码</string>
+    <string name="wallet_personal_sms_code_empty_warning">请输入短信验证码</string>
+    <string name="wallet_personal_my_bank_card">我的银行卡</string>
+    <string name="bd_wallet_cancel_bind_tip">确定解除绑定当前银行卡？</string>
+    <string name="bd_wallet_cancel_bind">解除绑定</string>
+    <string name="bd_wallet_cancel_bind_title">解绑银行卡</string>
+    <string name="bd_wallet_unbind_sms_code_has_sent">短信验证码已发送至 %1$s的手机，请收到后填写以验证身份，解绑后可重新绑定。</string>
+    <string name="bd_wallet_balance_pwd_setting_tip2">为了您的账户安全，请设置手机支付密码</string>
+    
+    <string name="bd_wallet_gathering_success">成功收款%1$s元！</string>
+    <string name="bd_wallet_gathering_failed">收款失败！</string>
+    <string name="bd_wallet_auth_tip">为了您的支付顺畅，请认证银行卡信息</string>
+    <string name="bd_wallet_auth_rightnow">立即认证</string>
+    
+</resources>    
+    

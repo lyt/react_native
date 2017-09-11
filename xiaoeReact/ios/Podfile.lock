@@ -1,0 +1,21 @@
+PODS:
+  - Bugly (2.4.6)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - RSKImageCropper (1.6.0)
+
+DEPENDENCIES:
+  - Bugly
+  - Masonry
+  - MBProgressHUD
+  - RSKImageCropper
+
+SPEC CHECKSUMS:
+  Bugly: 7756e72c59387b0d490f46e83ab458ae94ee7fba
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  RSKImageCropper: 6903235c7a8a79acb1e1f3490e2c911b858f8208
+
+PODFILE CHECKSUM: 0bf84b6ff902f5527948d8d674eaa01120598d0f
+
+COCOAPODS: 1.1.1

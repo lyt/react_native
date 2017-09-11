@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_base_window_bg"
+    android:orientation="vertical" >
+
+    <com.baidu.wallet.base.widget.BdActionBar
+        android:id="@+id/bdactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <RelativeLayout
+            android:id="@+id/scrollview_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+            
+		    <include 
+		        android:id="@+id/bd_wallet_banner_layout"
+		        layout="@layout/wallet_base_banner_notice_layout"
+		        android:visibility="gone"
+		        />
+            
+            <TextView
+                android:id="@+id/wallet_transfer_account_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="10dp"
+				android:layout_below="@id/bd_wallet_banner_layout"
+                android:text="@string/wallet_transfer_account_tip1"
+                android:textColor="@color/ebpay_text_normal"
+                android:textSize="@dimen/bd_wallet_text_size_normal" />
+			<TextView
+			    android:id="@+id/wallet_transfer_account_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="10dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="8dp"
+				android:layout_below="@id/wallet_transfer_account_title1"
+                android:textColor="@color/ebpay_text_normal"
+                android:textSize="@dimen/bd_wallet_text_size_small" />
+			
+            <LinearLayout
+                android:id="@+id/bd_wallet_transfer_account_input_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wallet_transfer_account_title2"
+                android:layout_marginLeft="@dimen/bd_wallet_transfer_item_margin_horizontal"
+                android:layout_marginRight="@dimen/bd_wallet_transfer_item_margin_horizontal"
+                android:background="@drawable/wallet_base_bg_input_normal"
+                android:orientation="vertical" >
+
+                <!-- 收款人账号 -->
+
+                <RelativeLayout
+                    android:id="@+id/wallet_transfer_cardnumber_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/bd_wallet_account_tip"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/bd_wallet_item_padding_left"
+                        android:text="@string/wallet_transfer_payee_account_tip"
+                        android:textColor="@color/bd_wallet_black"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/bd_transfer_wallet_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bd_wallet_transfer_item_height"
+                        android:layout_toRightOf="@id/bd_wallet_account_tip"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bd_wallet_gray" />
+
+                <!-- 开户姓名 -->
+
+                <RelativeLayout
+                    android:id="@+id/wallet_transfer_name_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/name_tip"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/bd_wallet_item_padding_left"
+                        android:text="@string/wallet_transfer_payee_name_tip"
+                        android:textColor="@color/bd_wallet_black"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/wallet_truename"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bd_wallet_transfer_item_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:layout_toRightOf="@id/name_tip"
+                        android:background="@null"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/wallet_truename"
+                    android:background="@color/bd_wallet_gray" />
+                
+                </RelativeLayout>
+
+
+                <!-- 转账金额 -->
+
+                <RelativeLayout
+                    android:id="@+id/wallet_transfer_amount_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/amount_tip"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/bd_wallet_item_padding_left"
+                        android:text="@string/wallet_transfer_amount"
+                        android:textColor="@color/bd_wallet_black"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <ImageView
+                        android:id="@+id/bd_wallet_transfer_info_img"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/wallet_base_info_btn_selector"
+                        android:visibility="visible" />
+
+                    <com.baidu.wallet.base.widget.PluginEditText
+                        android:id="@+id/wallet_transfer_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bd_wallet_transfer_item_height"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/bd_wallet_transfer_info_img"
+                        android:layout_toRightOf="@id/amount_tip"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/wallet_transfer_account_hint"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textColorHint="@color/bd_wallet_text_gray"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bd_wallet_gray" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/wallet_transfer_notify_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bd_wallet_transfer_account_input_layout"
+                android:layout_marginLeft="@dimen/bd_wallet_transfer_item_margin_horizontal"
+                android:layout_marginRight="@dimen/bd_wallet_transfer_item_margin_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/wallet_base_bg_input_normal" >
+
+                <TextView
+                    android:id="@+id/bd_wallet_notify_user"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/bd_wallet_item_padding_left"
+                    android:text="@string/wallet_transfer_notify_user"
+                    android:textColor="@color/bd_wallet_black"
+                    android:textSize="@dimen/bd_wallet_text_size_normal" />
+                
+                <ImageView
+                        android:id="@+id/bd_wallet_payee_phone_del"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:visibility="gone"
+                        android:src="@drawable/wallet_base_contacts_icon" />
+
+                <com.baidu.wallet.base.widget.DivisionEditText
+                    android:id="@+id/bd_wallet_notify_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bd_wallet_transfer_item_height"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/bd_wallet_notify_user"
+                    android:layout_toLeftOf="@id/bd_wallet_payee_phone_del"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:textColor="@color/ebpay_text_normal"
+                    android:textColorHint="@color/bd_wallet_text_gray"
+                    android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                <!--
+                         <ImageView
+                        android:id="@+id/wallet_contacts"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignRight="@id/wallet_bankcard"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/wallet_base_indicator_arrow" />
+                -->
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bd_wallet_transfer_account_nextbtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/wallet_transfer_notify_layout"
+                android:layout_marginLeft="@dimen/bd_wallet_transfer_item_margin_horizontal"
+                android:layout_marginRight="@dimen/bd_wallet_transfer_item_margin_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/wallet_base_btn"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/wallet_base_next_step"
+                android:textColor="@color/bd_wallet_white"
+                android:textSize="@dimen/bd_wallet_text_size_normal" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallet_base_bank_item_selector"
+    android:paddingBottom="10dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/bd_wallet_goods_name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bd_wallet_trans_amount"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/bd_wallet_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/ebpay_text_normal"
+            android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+        <com.baidu.wallet.base.widget.NetImageView
+            android:id="@+id/bd_wallet_desc_img"
+            android:layout_width="34dp"
+            android:layout_height="18dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bd_wallet_trans_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bd_wallet_goods_name_layout"
+        android:layout_below="@+id/bd_wallet_goods_name_layout"
+        android:textColor="@color/bd_wallet_text_gray"
+        android:textSize="@dimen/bd_wallet_text_size_small" />
+
+    <TextView
+        android:id="@+id/bd_wallet_trans_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/ebpay_text_normal"
+        android:textSize="@dimen/bd_wallet_text_size_normal"
+        android:textStyle="bold" />
+
+</RelativeLayout>

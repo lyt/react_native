@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bd_wallet_transfer_item_height"
+        android:background="@drawable/wallet_base_history_item_selector"
+        android:paddingLeft="22.6dp"
+        android:paddingRight="15dp" >
+        
+        <TextView
+            android:id="@+id/bd_wallet_bank_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:textColor="@color/ebpay_text_normal"
+            android:textColorHint="@color/bd_wallet_text_gray"
+            android:textSize="16sp"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

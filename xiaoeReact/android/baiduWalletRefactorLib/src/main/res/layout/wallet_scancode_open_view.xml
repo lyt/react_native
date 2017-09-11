@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.baidu.wallet.base.widget.BdActionBar
+        android:id="@+id/bdactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bdactionbar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical" >
+			
+           <TextView
+                android:id="@+id/show_code_help_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                 android:layout_gravity="center"
+                android:text="@string/show_code_help_tips"
+                android:textColor="@color/bd_wallet_text_gray_color"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="@dimen/ebpay_text_size_15"
+                />
+           
+            <ImageView
+                android:id="@+id/scan_code_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_scancode_img_tiaoma" />
+
+            <LinearLayout
+                android:id="@+id/protocol_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/ebpay_protocol"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:button="@drawable/ebpay_bg_checkbox_for_corner_coupon"
+                    android:checked="true"
+                    android:layout_marginLeft="2dp"
+                    android:clickable="true"
+                    android:textColor="@color/ebpay_black"
+                    android:textSize="@dimen/ebpay_text_size_15" />
+
+                <TextView
+                    android:id="@+id/ebpay_protocol_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/scan_code_protocol"
+                    android:textSize="@dimen/ebpay_text_size_15" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ebpay_bt_height"
+                android:layout_marginBottom="@dimen/ebpay_line_margin_10"
+                android:layout_marginTop="@dimen/ebpay_line_margin_20"
+                android:background="@drawable/wallet_base_btn"
+                android:text="@string/open_scancode_btn_tips"
+                android:textColor="@color/ebpay_white"
+                android:textSize="@dimen/ebpay_text_size_18" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

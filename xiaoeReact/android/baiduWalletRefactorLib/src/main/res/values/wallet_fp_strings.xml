@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="wallet_fp_select_wrong_number">您选择的号码格式错误，请重新选择</string>
+    <string name="wallet_fp_select_null_number">手机号获取失败，请检查或手动输入</string>
+    <string name="wallet_fp_charge_now">立即充值</string>
+    <string name="wallet_fp_price">%1$s元</string>
+    <string name="wallet_fp_discount">%1$s折</string>
+    <string name="wallet_fp_promotion">话费充值，立享折扣优惠价！</string>
+    <string name="wallet_fp_mobile_hint">请输入手机号码</string>
+    <string name="wallet_fp_my_number">本机号码</string>
+    <string name="wallet_fp_promotion_tip">优惠价</string>
+    <string name="wallet_fp_no_faces">您手机号码所在地区的运营商正在升级维护，请稍后再试</string>
+    <string name="wallet_fp_fix_tip">您可能输入错误，是否更换为</string>
+    <string name="wallet_fp_fix_sure">不更换</string>
+    <string name="wallet_fp_history_clear">清空历史记录</string>
+	<string name="wallet_fp_mobile_bind">此账号绑定手机号</string>	
+	<string name="wallet_fp_mobile_not_in_contacts">此手机号不在通讯录内</string>	
+	<string name="wallet_fp_price_not_pay">此面值暂时缺货</string>	
+	<string name="wallet_fp_face_not_have">该运营商正在维护暂不可用</string>	
+	<string name="wallet_fp_button_disable">暂不可用</string>	
+		
+</resources>

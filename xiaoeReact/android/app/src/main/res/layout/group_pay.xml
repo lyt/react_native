@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ORDER_ID" />
+
+        <EditText
+            android:id="@+id/orderid_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入ORDER ID"
+            android:text="1396508380R75702" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="订单金额" />
+
+        <EditText
+            android:id="@+id/payamount_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入订单金额(分)"
+            android:inputType="number"
+            android:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="CUSTOMER_ID" />
+
+        <EditText
+            android:id="@+id/customerid_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入customerId"
+             android:inputType="number"
+            android:text="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="DEVICE_TYPE" />
+
+        <EditText
+            android:id="@+id/devicetype_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入deviceType"
+            android:text="1" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PASSUID" />
+
+        <EditText
+            android:id="@+id/passuid_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:inputType="number"
+            android:hint="输入passuid"
+            android:text="1226029901" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PASSCOPE" />
+
+        <EditText
+            android:id="@+id/passcope_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入passcope"
+            android:text="2" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/jump_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="收银台" />
+
+</LinearLayout>

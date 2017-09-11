@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:dither="true"
+    android:shape="oval" >
+
+    <stroke
+        android:width="5dp"
+        android:color="@color/bd_wallet_circle_gray" />
+
+    <solid android:color="@color/bd_wallet_circle_blue" />
+
+</shape>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bd_wallet_white"
+    android:orientation="vertical" >
+
+    <com.baidu.wallet.base.widget.BdActionBar
+        android:id="@+id/bdactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/bd_wallet_result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wallet_base_trans_noneed_pay"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp"
+                android:paddingTop="27dp" >
+
+                <TextView
+                    android:id="@+id/bd_wallet_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="18dp"
+                    android:text="@string/bd_wallet_trans_sucess"
+                    android:textColor="@color/bd_wallet_white"
+                    android:textSize="@dimen/bd_wallet_text_size_xxxlarge" />
+                <!-- android:drawableRight="@drawable/bd_wallet_right_arrow" -->
+                <TextView 
+                    android:id="@+id/bd_wallet_goods_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="18dp"
+                    android:textColor="@color/bd_wallet_white"
+                    android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                <TextView
+                    android:id="@+id/bd_wallet_price_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="@string/bd_wallet_trans_price"
+                    android:textColor="@color/bd_wallet_white"
+                    android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                <TextView
+                    android:id="@+id/bd_wallet_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bd_wallet_white"
+                    android:textSize="@dimen/bd_wallet_text_size_largest" />
+
+                <TextView
+                    android:id="@+id/bd_wallet_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bd_wallet_save_yuan"
+                    android:textColor="@color/bd_wallet_white"
+                    android:textSize="@dimen/bd_wallet_text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp" >
+
+                <TextView
+                    android:id="@+id/bd_wallet_result_tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/ebpay_text_normal"
+                    android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                <TextView
+                    android:id="@+id/bd_wallet_to_sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/bd_wallet_to_sp"
+                    android:textColor="@color/wallet_base_text_blue"
+                    android:textSize="@dimen/bd_wallet_text_size_normal"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/bd_wallet_extra_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/wallet_base_6c"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/bd_wallet_extra_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/bd_wallet_extra1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp" >
+
+                    <TextView
+                        android:id="@+id/bd_wallet_extra1_tip"
+                        android:layout_width="@dimen/bd_wallet_tip_with"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bd_wallet_rece_time"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/bd_wallet_extra1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <ImageView
+                        android:id="@+id/bd_wallet_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/wallet_personal_right_arrow"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bd_wallet_extra2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp" >
+
+                    <TextView
+                        android:id="@+id/bd_wallet_extra2_tip"
+                        android:layout_width="@dimen/bd_wallet_tip_with"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/bd_wallet_extra2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/wallet_base_6c" />
+
+            <LinearLayout
+                android:id="@+id/bd_wallet_order_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bd_wallet_white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp"
+                android:paddingTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/bd_wallet_tip_with"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bd_wallet_sp_name"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/bd_wallet_sp_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bd_wallet_payinfo_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="@dimen/bd_wallet_tip_with"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bd_wallet_payway"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/bd_wallet_payway_txt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="5"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:layout_width="@dimen/bd_wallet_tip_with"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bd_wallet_trans_type"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/bd_wallet_trans_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:layout_width="@dimen/bd_wallet_tip_with"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bd_wallet_trans_time"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/bd_wallet_trans_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:layout_width="@dimen/bd_wallet_tip_with"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bd_wallet_trans_no"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/bd_wallet_trans_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bd_wallet_sp_no_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="@dimen/bd_wallet_tip_with"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bd_wallet_sp_no"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/bd_wallet_sp_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ebpay_text_normal"
+                        android:textSize="@dimen/bd_wallet_text_size_normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/bd_wallet_close_trans"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/wallet_base_neg_btn_bg"
+            android:gravity="center"
+            android:text="@string/bd_wallet_close_trans"
+            android:textColor="@color/bd_wallet_white"
+            android:textSize="@dimen/bd_wallet_text_size_large"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bd_wallet_pay"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/wallet_base_btn"
+            android:gravity="center"
+            android:text="@string/bd_wallet_confirm_pay"
+            android:textColor="@color/bd_wallet_white"
+            android:textSize="@dimen/bd_wallet_text_size_large"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bd_wallet_kefu"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/bd_wallet_kefu"
+        android:textSize="@dimen/bd_wallet_text_size_normal" />
+
+</LinearLayout>
